@@ -34,10 +34,10 @@ public class TransactionService {
 		transactionList.forEach(transaction -> {
 			TransactionDetails transactionDetails = new TransactionDetails();
 			transactionDetails.setAccountNumber(account.getAccountNumber());
-			transactionDetails.setAccountType(account.getAccountType());
+			transactionDetails.setAccountType(account.getAccountType()); //TODO map from account type enum 
 			transactionDetails.setAmount(transaction.getAmount());
-			transactionDetails.setCurrency(account.getCurrency());
-			transactionDetails.setTrasactionType(transaction.getTrasactionType());
+			transactionDetails.setCurrency(account.getCurrency()); //TODO map from currency type enum 
+			transactionDetails.setTrasactionType(transaction.getTrasactionType()); //TODO map from transaction type enum 
 			transactionDetails.setNarrative(transaction.getNarrative());
 			transactionDetails.setTrasactionDate(transaction.getTrasactionDateTime().toLocalDate());
 			transactionDetailsList.add(transactionDetails);

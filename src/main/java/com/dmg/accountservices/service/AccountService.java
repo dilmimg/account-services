@@ -33,8 +33,8 @@ public class AccountService {
 			accountDetails.setAccountId(account.getId());
 			accountDetails.setAccountName(account.getAccountName());
 			accountDetails.setAccountNumber(account.getAccountNumber());
-			accountDetails.setAccountType(account.getAccountType());
-			accountDetails.setCurrency(account.getCurrency());
+			accountDetails.setAccountType(account.getAccountType()); // TODO map from account type enum 
+			accountDetails.setCurrency(account.getCurrency()); // TODO map from currency type enum 
 			accountDetails.setBalanceAmount(account.getBalanceAmount());
 			accountDetails.setBalanceDate(LocalDate.now());
 			

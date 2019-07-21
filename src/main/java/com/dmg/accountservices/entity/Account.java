@@ -19,9 +19,9 @@ public class Account {
 	
 	private String accountName;
 	
-	private String accountType; //TODO
+	private String accountType;
 	
-	private String currency; //TODO
+	private String currency;
 	
 	private BigDecimal balanceAmount;
 	
